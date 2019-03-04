@@ -2,28 +2,22 @@
 
 exports[`PostTemplate renders without errors 1`] = `
 <DocumentFragment>
-  <header
-    style="background: rebeccapurple; margin-bottom: 1.45rem;"
+  <main
+    class="main"
   >
     <div
-      style="margin: 0px auto; max-width: 960px; padding: 1.45rem 1.0875rem;"
+      class="container"
     >
-      <h1
-        style="margin: 0px;"
+      <header
+        class="header-inner"
       >
         <a
+          class="header-inner__link--home header-inner__link"
           href="/"
-          style="color: white; text-decoration: none;"
         >
           Test Title
         </a>
-      </h1>
-    </div>
-  </header>
-  <div
-    style="margin: 0px auto; max-width: 960px; padding: 0px 1.0875rem 1.45rem 1.0875rem;"
-  >
-    <main>
+      </header>
       <article
         class="single"
       >
@@ -50,15 +44,7 @@ exports[`PostTemplate renders without errors 1`] = `
           </p>
         </div>
       </article>
-    </main>
-    <footer>
-      © 2019, Built with 
-      <a
-        href="https://www.gatsbyjs.org"
-      >
-        Gatsby
-      </a>
-    </footer>
-  </div>
+    </div>
+  </main>
 </DocumentFragment>
 `;

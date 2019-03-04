@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders withour errors 1`] = `
+<DocumentFragment>
+  <header
+    class="header-inner"
+  >
+    <a
+      class="header-inner__link--home header-inner__link"
+      href="/"
+    >
+      Gatsby
+    </a>
+  </header>
+</DocumentFragment>
+`;
