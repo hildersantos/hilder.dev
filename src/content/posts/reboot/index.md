@@ -1,7 +1,7 @@
 ---
 title: Reboot
 description: Um pouco sobre como resolvi reiniciar o blog
-date: 2019-03-04 16:23:57
+date: 2017-04-01T00:51:55-03:00
 image: ""
 draft: false
 template: post

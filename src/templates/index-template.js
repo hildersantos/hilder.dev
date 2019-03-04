@@ -13,6 +13,7 @@ const IndexTemplate = () => {
           filter: {
             frontmatter: { draft: { ne: true }, template: { eq: "post" } }
           }
+          sort: { order: DESC, fields: [frontmatter___date] }
         ) {
           edges {
             node {
