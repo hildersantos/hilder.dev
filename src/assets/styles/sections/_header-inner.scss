@@ -1,0 +1,23 @@
+.header-inner {
+    lost-utility: clearfix;
+    @include mq($from: tablet) {
+        padding-top: 2.4em;
+    }
+    &__link {
+        text-decoration: none;
+        &--home {
+            font-weight: 300;
+            font-family: $header-font-family;
+            font-size: 1.1rem;
+            color: $primary-color;
+            padding: 4px 0;
+            border-radius: 5px;
+            @include mq($from: desktop) {
+                font-size: 1.3rem;
+            }
+            &:hover {
+                color: $text-color;
+            }
+        }
+    }
+}

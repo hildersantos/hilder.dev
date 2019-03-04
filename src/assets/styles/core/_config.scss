@@ -1,0 +1,35 @@
+/*
+General config (variables & settings)
+----------
+*/
+
+/* UI */
+$primary-color: #20A39E;
+$secondary-color: #FFBA49;
+$text-color: #1B373F;
+$heading-color: #012A36;
+
+/* Breakpoints
+ * - This uses sass-mq package. Usage: @include `mq($from: size1, $until: size2)` or `mq($from: size)`
+ */
+$mq-breakpoints: (
+    mobile:  320px,
+    tablet:  740px,
+    desktop: 980px,
+    wide:    1300px
+);
+
+@import "~sass-mq"; // Imports the sass-mq package from node
+
+
+/* Typography */
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i|Montserrat:300,700,800');
+$base-font-size: 16px;
+$default-font-family: 'Raleway', sans-serif;
+$default-font-color: $text-color;
+$default-link-color: $primary-color;
+
+/* Headings */
+$header-font-family: 'Montserrat', sans-serif;
+$header-font-weight: 700;
+$header-color: $heading-color;

@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IndexTemplate renders without errors 1`] = `
+<DocumentFragment>
+  <main
+    class="main"
+  >
+    <div
+      class="container"
+    >
+      <header
+        class="header-inner"
+      >
+        <a
+          class="header-inner__link--home header-inner__link"
+          href="/"
+        >
+          Test Title
+        </a>
+      </header>
+      <section
+        class="post-listing"
+      >
+        <article
+          class="post-listing__article"
+        >
+          <h2
+            class="post-listing__title"
+          >
+            <a
+              class="post-listing__link"
+              href="test_0"
+            >
+              Test 0
+            </a>
+          </h2>
+        </article>
+        <article
+          class="post-listing__article"
+        >
+          <h2
+            class="post-listing__title"
+          >
+            <a
+              class="post-listing__link"
+              href="test_1"
+            >
+              Test 1
+            </a>
+          </h2>
+        </article>
+        <article
+          class="post-listing__article"
+        >
+          <h2
+            class="post-listing__title"
+          >
+            <a
+              class="post-listing__link"
+              href="test_2"
+            >
+              Test 2
+            </a>
+          </h2>
+        </article>
+        <article
+          class="post-listing__article"
+        >
+          <h2
+            class="post-listing__title"
+          >
+            <a
+              class="post-listing__link"
+              href="test_3"
+            >
+              Test 3
+            </a>
+          </h2>
+        </article>
+      </section>
+      <div
+        class="navigation"
+      >
+        <ul
+          class="navigation__list"
+        >
+          <li
+            class="navigation__item"
+          >
+            <a
+              class="navigation__link"
+              href="test_0"
+            >
+              Test 0
+            </a>
+          </li>
+          <li
+            class="navigation__item"
+          >
+            <a
+              class="navigation__link"
+              href="test_1"
+            >
+              Test 1
+            </a>
+          </li>
+          <li
+            class="navigation__item"
+          >
+            <a
+              class="navigation__link"
+              href="test_2"
+            >
+              Test 2
+            </a>
+          </li>
+          <li
+            class="navigation__item"
+          >
+            <a
+              class="navigation__link"
+              href="test_3"
+            >
+              Test 3
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</DocumentFragment>
+`;

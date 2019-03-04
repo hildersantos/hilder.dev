@@ -37,9 +37,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
       allMarkdownRemark(
         limit: 1000
         sort: { order: DESC, fields: [frontmatter___date] }
-        filter: {
-          frontmatter: { template: { eq: "post" }, draft: { ne: true } }
-        }
+        filter: { frontmatter: { draft: { ne: true } } }
       ) {
         edges {
           node {
@@ -60,21 +58,24 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
     }
   `)
 
-  console.log(result)
-
   const { edges } = result.data.allMarkdownRemark
+
+  createPage({
+    path: "/",
+    component: path.resolve("./src/templates/index-template.js"),
+  })
 
   edges.forEach(edge => {
     if (_.get(edge, "node.frontmatter.template") === "page") {
       createPage({
         path: edge.node.fields.slug,
-        component: path.resolve("./src/template/page-templates.js"),
+        component: path.resolve("./src/templates/page-template.js"),
         context: { slug: edge.node.fields.slug },
       })
     } else if (_.get(edge, "node.frontmatter.template") === "post") {
       createPage({
         path: edge.node.fields.slug,
-        component: path.resolve("./src/template/post-templates.js"),
+        component: path.resolve("./src/templates/post-template.js"),
         context: { slug: edge.node.fields.slug },
       })
     }
