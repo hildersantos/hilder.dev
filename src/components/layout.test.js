@@ -1,19 +1,19 @@
 import React from "react"
 import { render } from "react-testing-library"
-import { StaticQuery } from "gatsby"
+import { StaticQuery, useStaticQuery } from "gatsby"
 
 import Layout from "./layout"
 
+const props = {
+  site: {
+    siteMetadata: {
+      title: `Default Title`,
+    },
+  },
+}
 beforeEach(() => {
-  StaticQuery.mockImplementationOnce(({ render }) =>
-    render({
-      site: {
-        siteMetadata: {
-          title: `Default Title`,
-        },
-      },
-    })
-  )
+  StaticQuery.mockImplementationOnce(({ render }) => render(props)),
+    useStaticQuery.mockReturnValue(props)
 })
 
 describe("Layout", () => {

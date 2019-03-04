@@ -2,7 +2,12 @@ module.exports = {
   siteMetadata: {
     title: `Hilder Santos`,
     description: `Blog pessoal do Hilder Santos`,
-    author: `@hildersantos`,
+    author: {
+      name: `Hilder Santos`,
+      contacts: {
+        twitter: `@hildersantos`,
+      },
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

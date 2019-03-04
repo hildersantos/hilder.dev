@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostTemplate renders without errors 1`] = `
+<DocumentFragment>
+  <header
+    style="background: rebeccapurple; margin-bottom: 1.45rem;"
+  >
+    <div
+      style="margin: 0px auto; max-width: 960px; padding: 1.45rem 1.0875rem;"
+    >
+      <h1
+        style="margin: 0px;"
+      >
+        <a
+          href="/"
+          style="color: white; text-decoration: none;"
+        >
+          Test Title
+        </a>
+      </h1>
+    </div>
+  </header>
+  <div
+    style="margin: 0px auto; max-width: 960px; padding: 0px 1.0875rem 1.45rem 1.0875rem;"
+  >
+    <main>
+      <article
+        class="single"
+      >
+        <header
+          class="single__header"
+        >
+          <h1
+            class="single__title"
+          >
+            test
+          </h1>
+          <time
+            class="single__date"
+            datetime="2016-09-01T00:00:00-03:00"
+          >
+            01/09/2016
+          </time>
+        </header>
+        <div
+          class="single__content"
+        >
+          <p>
+            test
+          </p>
+        </div>
+      </article>
+    </main>
+    <footer>
+      © 2019, Built with 
+      <a
+        href="https://www.gatsbyjs.org"
+      >
+        Gatsby
+      </a>
+    </footer>
+  </div>
+</DocumentFragment>
+`;
