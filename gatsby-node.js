@@ -19,7 +19,12 @@ exports.onCreateNode = ({ node, actions: { createNodeField }, getNode }) => {
         value: node.frontmatter.slug,
       })
     } else {
-      const value = createFilePath({ node, getNode })
+      const templateType = node.frontmatter.template || ""
+      const value = createFilePath({
+        node,
+        getNode,
+        basePath: `${templateType}s`,
+      })
       createNodeField({
         node,
         name: "slug",
