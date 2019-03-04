@@ -1,5 +1,5 @@
 ---
-title: Setup
+title: Stack Pessoal
 description: Ferramentas que utilizo no meu dia a dia de desenvolvedor
 date: 2018-08-28T14:17:34-03:00
 image: null
@@ -7,19 +7,21 @@ draft: false
 template: page
 ---
 
-Uma das dúvidas que sempre rolam é: que editor uso para programar? Qual o meu material de trabalho? Qual a cor da cueca que estou usando? (ok... essa dúvida, nem sempre. :smirk:)
+Uma das dúvidas que sempre rolam é: que editor uso para programar? Qual o meu material de trabalho? Quais apps poderia indicar?
 
 Atualizarei sempre esta página para responder estas perguntas - e servir como uma referência para mim mesmo.
 
 ## Editor & Terminal
 
-- **[Visual Studio Code](https://code.visualstudio.com/)**: Uso ele há algum tempo já. Antes dele, usava o **_Emacs_** com o **_Spacemacs_**. Alguns plugins: _ElixirLinter, File Utils, Material Icon Theme, Panda Theme, Vim, vscode-elixir, Auto Import (es6, etc)_.
+- **[Visual Studio Code](https://code.visualstudio.com/)**: Uso ele há algum tempo já. Antes dele, usava o **_Emacs_** com o **_Spacemacs_**. Alguns plugins: _ElixirLS, File Utils, Horizon Italic Theme, Vim, Auto Import (es6, etc)_.
 - **[iTerm 2](https://www.iterm2.com/)**: É meu terminal padrão há anos. Uso ele juntamente com o _[Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)_, o tema _Solarized Dark_ e a fonte _Fira Code_. Há um tempo, testei o **[Hyper](https://hyper.is/)**, mas ele não inicia tão rápido e é tão eficaz quando o iTerm. Acabei ficando com este último mesmo.
 
 ## Apps
 
 - **[Things 3](https://culturedcode.com/things/)**: Apesar de já ter comprado há um bom tempo, só passei a usá-lo bastante mesmo recentemente. Organizo minhas tarefas por lá e tem sido bastante efetivo!
 - **[Dash](https://kapeli.com/dash)**: O **_Dash_** é um daqueles apps que você nunca ouviu falar, mas depois que passa a usá-lo, não tem mais volta. Ele basicamente faz o download de API's para que você possa pesquisá-las localmente e de forma MUITO efetiva. Por exemplo: quer saber pra que funciona o `Code.eval_string/3` no Elixir? Simples: é só digitar `elixir:Code.eval_st` que a busca é quase instantânea. Sensacional!
+- **[Evernote](https://evernote.com)**: Outro aplicativo que considero essencial. É nele guardo todos os artigos que acho interessante e que faço meus planejamentos de estudo, viagens e etc.
+- **[Trello](https://trello.com/hildersantos/recommend)**: Uso o Trello religiosamente há uns 2 anos. Nele estão todos os meus planejamentos de projetos presentes e futuros. O Trello realmente me ajuda a organizar bem minhas tarefas de desenvolvimento.
 
 ## Devices
 

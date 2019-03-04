@@ -26,10 +26,7 @@ const Layout = ({ children, title, description }) => (
     `}
     render={data => (
       <>
-        <SEO
-          title={title || data.site.siteMetadata.title}
-          description={description || undefined}
-        />
+        <SEO title={title} description={description || undefined} />
         <main className="main">
           <div className="container">
             <Header siteTitle={data.site.siteMetadata.title} />
