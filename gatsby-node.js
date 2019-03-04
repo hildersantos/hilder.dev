@@ -14,8 +14,8 @@ exports.onCreateNode = ({ node, actions: { createNodeField }, getNode }) => {
   if (node.internal.type === "MarkdownRemark") {
     if (typeof node.frontmatter.slug !== "undefined") {
       createNodeField({
-        node,
         name: "slug",
+        node,
         value: node.frontmatter.slug,
       })
     } else {
@@ -26,8 +26,8 @@ exports.onCreateNode = ({ node, actions: { createNodeField }, getNode }) => {
         basePath: `${templateType}s`,
       })
       createNodeField({
-        node,
         name: "slug",
+        node,
         value,
       })
     }
