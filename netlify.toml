@@ -2,6 +2,12 @@
 publish = "public"
 command = "npm run build"
 
+[[redirects]]
+from = "https://hildersantos.com/*"
+to = "https://hilder.dev/:splat"
+status = 301
+force = true
+
 # [context.production.environment]
 # HUGO_VERSION = "0.54.0"
 # HUGO_ENV = "production"
