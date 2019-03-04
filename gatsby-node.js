@@ -35,8 +35,6 @@ exports.onCreateNode = ({ node, actions: { createNodeField }, getNode }) => {
 }
 
 exports.createPages = async ({ graphql, actions: { createPage } }) => {
-  // TODO: Create 404 page
-
   const result = await graphql(`
     {
       allMarkdownRemark(
@@ -68,6 +66,11 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
   createPage({
     path: "/",
     component: path.resolve("./src/templates/index-template.js"),
+  })
+
+  createPage({
+    path: "/404/",
+    component: path.resolve("./src/templates/not-found-template.js"),
   })
 
   edges.forEach(edge => {
