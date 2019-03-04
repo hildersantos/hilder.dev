@@ -27,7 +27,6 @@ const Nav = () => {
       }
     `
   )
-  console.log(edges)
   return (
     <div className="navigation">
       <ul className="navigation__list">
