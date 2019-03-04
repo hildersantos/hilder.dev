@@ -3,6 +3,7 @@ module.exports = {
     edges: [
       {
         node: {
+          id: "c1215175-e047-5757-a4c8-4bf25cd2189a",
           frontmatter: {
             title: "Test 0",
             template: "page",
@@ -16,6 +17,7 @@ module.exports = {
       },
       {
         node: {
+          id: "c1215175-e047-5757-a4c8-4bf25cd2189b",
           frontmatter: {
             title: "Test 1",
             template: "post",
@@ -29,6 +31,7 @@ module.exports = {
       },
       {
         node: {
+          id: "c1215175-e047-5757-a4c8-4bf25cd2189c",
           frontmatter: {
             title: "Test 2",
             template: "post",
@@ -42,6 +45,7 @@ module.exports = {
       },
       {
         node: {
+          id: "c1215175-e047-5757-a4c8-4bf25cd2189d",
           frontmatter: {
             title: "Test 3",
             template: "post",

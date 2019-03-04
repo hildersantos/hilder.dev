@@ -62,6 +62,11 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
 
   const { edges } = result.data.allMarkdownRemark
 
+  createPage({
+    path: "/",
+    component: path.resolve("./src/templates/index-template.js"),
+  })
+
   edges.forEach(edge => {
     if (_.get(edge, "node.frontmatter.template") === "page") {
       createPage({
