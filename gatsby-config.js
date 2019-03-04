@@ -32,7 +32,23 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-twemoji-shortcut`,
+            options: {
+              // classname: 'some_classname another_classname', // add additional classname(s) to the emoji
+              // style: {
+              //   // add additional inline-styling to the emoji
+              //   background: 'gold'
+              // }
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
