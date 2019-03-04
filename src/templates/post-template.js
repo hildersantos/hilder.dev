@@ -2,26 +2,33 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import moment from "moment"
+import "moment/locale/pt-br"
+import { DiscussionEmbed } from "disqus-react"
 
 const PostTemplate = ({ data }) => {
   const { title, date } = data.markdownRemark.frontmatter
-  const { html } = data.markdownRemark
+  const { html, id } = data.markdownRemark
+  const disqusShortname = data.site.siteMetadata.disqusShortname
+  const disqusConfig = {
+    identifier: id,
+    title,
+  }
   return (
     <Layout title={title}>
       <article className="single">
         <header className="single__header">
           <h1 className="single__title">{title}</h1>
           <time className="single__date" dateTime={moment(date).format()}>
-            {moment(date).format("DD/MM/YYYY")}
+            {moment(date).format("DD [de] MMMM [de] YYYY")}
           </time>
         </header>
         <div
           className="single__content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
-        {/* <div class="single__comments">
-            {{ template "_internal/disqus.html" . }}
-        </div> */}
+        <div className="single__comments">
+          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+        </div>
       </article>
     </Layout>
   )
@@ -33,6 +40,7 @@ export const query = graphql`
       siteMetadata {
         title
         description
+        disqusShortname
         author {
           name
           contacts {

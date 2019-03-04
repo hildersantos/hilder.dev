@@ -8,8 +8,10 @@ module.exports = {
         twitter: `@hildersantos`,
       },
     },
+    disqusShortname: "hildersantos",
   },
   plugins: [
+    `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -38,12 +40,13 @@ module.exports = {
         plugins: [
           {
             resolve: `gatsby-remark-twemoji-shortcut`,
+            options: {},
+          },
+          {
+            resolve: "gatsby-remark-external-links",
             options: {
-              // classname: 'some_classname another_classname', // add additional classname(s) to the emoji
-              // style: {
-              //   // add additional inline-styling to the emoji
-              //   background: 'gold'
-              // }
+              target: "_self",
+              rel: "nofollow",
             },
           },
         ],
