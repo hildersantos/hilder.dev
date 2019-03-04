@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav renders without errors 1`] = `
+<DocumentFragment>
+  <div
+    class="navigation"
+  >
+    <ul
+      class="navigation__list"
+    >
+      <li
+        class="navigation__item"
+      >
+        <a
+          class="navigation__link"
+          href="test_0"
+        >
+          Test 0
+        </a>
+      </li>
+      <li
+        class="navigation__item"
+      >
+        <a
+          class="navigation__link"
+          href="test_1"
+        >
+          Test 1
+        </a>
+      </li>
+      <li
+        class="navigation__item"
+      >
+        <a
+          class="navigation__link"
+          href="test_2"
+        >
+          Test 2
+        </a>
+      </li>
+      <li
+        class="navigation__item"
+      >
+        <a
+          class="navigation__link"
+          href="test_3"
+        >
+          Test 3
+        </a>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;

@@ -8,6 +8,8 @@ module.exports = {
             template: "page",
             date: "2019-03-04T02:39:13.000Z",
             draft: false,
+          },
+          fields: {
             slug: "test_0",
           },
         },
@@ -19,6 +21,8 @@ module.exports = {
             template: "post",
             date: "2019-03-05T02:39:13.000Z",
             draft: false,
+          },
+          fields: {
             slug: "test_1",
           },
         },
@@ -30,6 +34,8 @@ module.exports = {
             template: "post",
             date: "2019-03-06T02:39:13.000Z",
             draft: true,
+          },
+          fields: {
             slug: "test_2",
           },
         },
@@ -41,6 +47,8 @@ module.exports = {
             template: "post",
             date: "2019-03-07T02:39:13.000Z",
             draft: true,
+          },
+          fields: {
             slug: "test_3",
           },
         },

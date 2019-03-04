@@ -2,9 +2,9 @@
 title: A good title
 description: A new description
 date: 2019-03-04 02:39:13
-image:
+image: ""
 draft: false
-template: post
+template: page
 ---
 
 Here we go...
