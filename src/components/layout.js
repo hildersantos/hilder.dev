@@ -11,6 +11,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import SEO from "./seo"
+import Nav from "./nav"
 
 const Layout = ({ children, title, description }) => (
   <StaticQuery
@@ -33,6 +34,7 @@ const Layout = ({ children, title, description }) => (
           <div className="container">
             <Header siteTitle={data.site.siteMetadata.title} />
             {children}
+            <Nav />
           </div>
         </main>
       </>

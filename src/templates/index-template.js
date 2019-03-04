@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import PostListing from "../components/post-listing"
 import { useStaticQuery, graphql } from "gatsby"
-import Nav from "../components/nav"
 
 const IndexTemplate = () => {
   const {
@@ -33,7 +32,6 @@ const IndexTemplate = () => {
   return (
     <Layout>
       <PostListing edges={edges} />
-      <Nav />
     </Layout>
   )
 }
