@@ -76,7 +76,10 @@ hr {
   text-align: center;
 }
 :not(.highlight) > code {
-  color: #48494a;
+  // color: #48494a;
+  background: #f1f1f1;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
 }
 
 .container {
