@@ -36,9 +36,11 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
+    "start": "yarn develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "jest",
+    "test:watch": "yarn test -- --watch",
+    "test:update": "yarn test -- -u"
   },
   "repository": {
     "type": "git",
