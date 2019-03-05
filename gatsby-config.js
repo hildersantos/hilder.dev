@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Hilder Santos`,
-    description: `Blog pessoal do Hilder Santos`,
+    description: `Blog pessoal do Hilder Santos, desenvolvedor full-stack especializado em Elixir e com conhecimentos de React + Redux.`,
     siteUrl: `https://hilder.dev`,
     author: {
       name: `Hilder Santos`,
