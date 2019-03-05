@@ -7,7 +7,13 @@ import { DiscussionEmbed } from "disqus-react"
 import Img from "gatsby-image"
 
 const PostTemplate = ({ data }) => {
-  const { title, date, image, imageCaption } = data.markdownRemark.frontmatter
+  const {
+    title,
+    date,
+    image,
+    imageCaption,
+    description,
+  } = data.markdownRemark.frontmatter
   const { html, id } = data.markdownRemark
   const disqusShortname = data.site.siteMetadata.disqusShortname
   const disqusConfig = {
@@ -15,7 +21,7 @@ const PostTemplate = ({ data }) => {
     title,
   }
   return (
-    <Layout title={title}>
+    <Layout title={title} description={description}>
       <article className="single">
         <header className="single__header">
           <h1 className="single__title">{title}</h1>

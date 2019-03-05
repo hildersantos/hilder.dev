@@ -3,10 +3,10 @@ import Layout from "../components/layout"
 import { graphql } from "gatsby"
 
 const PageTemplate = ({ data }) => {
-  const { title } = data.markdownRemark.frontmatter
+  const { title, description } = data.markdownRemark.frontmatter
   const { html } = data.markdownRemark
   return (
-    <Layout title={title}>
+    <Layout title={title} description={description}>
       <article className="single">
         <header className="single__header">
           <h1 className="single__title">{title}</h1>
