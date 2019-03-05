@@ -117,6 +117,12 @@ module.exports = {
               rel: "nofollow",
             },
           },
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              noInlineHighlight: true,
+            },
+          },
         ],
       },
     },
