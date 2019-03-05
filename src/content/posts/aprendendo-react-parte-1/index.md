@@ -1,6 +1,6 @@
 ---
 title: Aprendendo React - Parte 1
-description: Sobre aprender React
+description: Um pouco sobre a trilha de estudos que criei para aprender React de uma vez por todas.
 date: 2018-08-30T20:45:26-03:00
 draft: false
 template: post

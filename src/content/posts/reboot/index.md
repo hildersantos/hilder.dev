@@ -1,6 +1,6 @@
 ---
 title: Reboot
-description: Um pouco sobre como resolvi reiniciar o blog
+description: Depois de mais de uma década rodando em WordPress, resolvi mudar de vez o blog, começando tudo do zero. Descubra o que utilizei inicialmente por aqui.
 date: 2017-04-01T00:51:55-03:00
 image: ""
 draft: false

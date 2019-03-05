@@ -1,6 +1,6 @@
 ---
 title: A Campus Party Salvador precisa de você
-description: Descubra porque participar da Campus Party Salvador pode ser uma boa pedida.
+description: Uma sessão nostálgica e um apelo à Campus Party que rolou em Salvador, no ano de 2017.
 date: 2017-04-04T02:07:50-03:00
 draft: false
 template: post
