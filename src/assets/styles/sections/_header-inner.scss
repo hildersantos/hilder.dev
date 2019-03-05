@@ -1,23 +1,22 @@
 .header-inner {
-    lost-utility: clearfix;
-    @include mq($from: tablet) {
-        padding-top: 2.4em;
+  lost-utility: clearfix;
+  @include mq($from: tablet) {
+    padding-top: 2.4em;
+  }
+  &__link {
+    text-decoration: none;
+    &--home {
+      font-weight: 300;
+      letter-spacing: -0.01em;
+      font-family: monospace;
+      font-size: 0.95rem;
+      background: #f1f1f1;
+      color: $text-color;
+      padding: 0.2rem 0.5rem;
+      border-radius: 0.3rem;
+      @include mq($from: desktop) {
+        font-size: 1.1rem;
+      }
     }
-    &__link {
-        text-decoration: none;
-        &--home {
-            font-weight: 300;
-            font-family: $header-font-family;
-            font-size: 1.1rem;
-            color: $primary-color;
-            padding: 4px 0;
-            border-radius: 5px;
-            @include mq($from: desktop) {
-                font-size: 1.3rem;
-            }
-            &:hover {
-                color: $text-color;
-            }
-        }
-    }
+  }
 }
