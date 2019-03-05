@@ -13,7 +13,10 @@ const PostTemplate = ({ data }) => {
     imageCaption,
     description,
   } = data.markdownRemark.frontmatter
-  const { html, id } = data.markdownRemark
+  const {
+    html,
+    fields: { slug },
+  } = data.markdownRemark
   return (
     <Layout title={title} description={description}>
       <article className="single">
@@ -35,7 +38,20 @@ const PostTemplate = ({ data }) => {
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </div>
-        <div className="single__comments" />
+        <div className="single__comments">
+          <a
+            href={`https://twitter.com/share?url=${encodeURIComponent(
+              `https://hilder.dev${slug}`
+            )}&text=${encodeURIComponent(
+              "Qual a sua opinião?"
+            )}&via=hildersantos`}
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            title="Compartilhe no Twitter"
+          >
+            Comente este artigo no Twitter
+          </a>
+        </div>
       </article>
     </Layout>
   )
