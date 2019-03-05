@@ -73,19 +73,36 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
     component: path.resolve("./src/templates/not-found-template.js"),
   })
 
-  edges.forEach(edge => {
-    if (_.get(edge, "node.frontmatter.template") === "page") {
+  // Filtering posts and pages...
+  const posts = edges.filter(
+    edge => _.get(edge, "node.frontmatter.template") === "post"
+  )
+  const pages = edges.filter(
+    edge => _.get(edge, "node.frontmatter.template") === "page"
+  )
+
+  // Posts creation
+  posts.forEach((post, index) => {
+    const next = index === posts.length - 1 ? null : posts[index + 1].node
+    const previous = index === 0 ? null : posts[index - 1].node
+
+    createPage({
+      path: post.node.fields.slug,
+      component: path.resolve("./src/templates/post-template.js"),
+      context: {
+        slug: post.node.fields.slug,
+        previous,
+        next,
+      },
+    })
+
+    // Pages creation
+    pages.forEach(page => {
       createPage({
-        path: edge.node.fields.slug,
+        path: page.node.fields.slug,
         component: path.resolve("./src/templates/page-template.js"),
-        context: { slug: edge.node.fields.slug },
+        context: { slug: page.node.fields.slug },
       })
-    } else if (_.get(edge, "node.frontmatter.template") === "post") {
-      createPage({
-        path: edge.node.fields.slug,
-        component: path.resolve("./src/templates/post-template.js"),
-        context: { slug: edge.node.fields.slug },
-      })
-    }
+    })
   })
 }
