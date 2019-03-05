@@ -1,10 +1,17 @@
+.gatsby-highlight {
+  font-size: 1.15rem;
+}
 .highlight {
-    padding: 20px;
-    border-radius: 5px;
+  padding: 20px;
+  border-radius: 5px;
 }
 /* Início - importado */
-.highlight table td { padding: 5px; }
-.highlight table pre { margin: 0; }
+.highlight table td {
+  padding: 5px;
+}
+.highlight table pre {
+  margin: 0;
+}
 .highlight {
   color: #faf6e4;
   background-color: #122b3b;
@@ -13,7 +20,11 @@
   color: #dee5e7;
   background-color: #4e5d62;
 }
-.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
+.highlight .c,
+.highlight .cd,
+.highlight .cm,
+.highlight .c1,
+.highlight .cs {
   color: #6c8b9f;
   font-style: italic;
 }
@@ -30,14 +41,18 @@
   color: #fefeec;
   background-color: #cc0000;
 }
-.highlight .k, .highlight .kd, .highlight .kv {
+.highlight .k,
+.highlight .kd,
+.highlight .kv {
   color: #f6dd62;
   font-weight: bold;
 }
-.highlight .o, .highlight .ow {
+.highlight .o,
+.highlight .ow {
   color: #4df4ff;
 }
-.highlight .p, .highlight .pi {
+.highlight .p,
+.highlight .pi {
   color: #4df4ff;
 }
 .highlight .gd {
@@ -116,7 +131,14 @@
   color: #ffb000;
   font-weight: bold;
 }
-.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
+.highlight .m,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .il,
+.highlight .mo,
+.highlight .mb,
+.highlight .mx {
   color: #f696db;
   font-weight: bold;
 }
@@ -128,7 +150,14 @@
   color: #f696db;
   font-weight: bold;
 }
-.highlight .s, .highlight .sb, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .sr, .highlight .s1 {
+.highlight .s,
+.highlight .sb,
+.highlight .sd,
+.highlight .s2,
+.highlight .sh,
+.highlight .sx,
+.highlight .sr,
+.highlight .s1 {
   color: #fff0a6;
   font-weight: bold;
 }
@@ -152,7 +181,7 @@
   font-weight: bold;
 }
 .highlight .w {
-  color: #BBBBBB;
+  color: #bbbbbb;
 }
 .highlight .nf {
   color: #a8e1fe;
@@ -163,7 +192,10 @@
 .highlight .na {
   color: #a8e1fe;
 }
-.highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi {
+.highlight .nv,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi {
   color: #a8e1fe;
   font-weight: bold;
 }
