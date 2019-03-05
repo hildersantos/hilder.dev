@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import moment from "moment"
 import "moment/locale/pt-br"
 import Img from "gatsby-image"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const PostTemplate = ({ data }) => {
   const {
@@ -39,7 +40,7 @@ const PostTemplate = ({ data }) => {
           />
         </div>
         <div className="single__comments">
-          <a
+          <OutboundLink
             href={`https://twitter.com/share?url=${encodeURIComponent(
               `https://hilder.dev${slug}`
             )}&text=${encodeURIComponent(
@@ -50,7 +51,7 @@ const PostTemplate = ({ data }) => {
             title="Compartilhe no Twitter"
           >
             Comente este artigo no Twitter
-          </a>
+          </OutboundLink>
         </div>
       </article>
     </Layout>
