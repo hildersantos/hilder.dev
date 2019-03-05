@@ -1,0 +1,21 @@
+.navigation-links {
+  padding: 2rem 0 1rem;
+  lost-utility: clearfix;
+  font-size: 1.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  &__link {
+    margin: 0.8rem 0;
+    text-align: left;
+    flex: 1;
+  }
+  @include mq($from: tablet) {
+    flex-direction: row;
+    font-size: 1.2rem;
+    .navigation-links__link--next {
+      text-align: right;
+    }
+  }
+}

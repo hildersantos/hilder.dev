@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import moment from "moment"
 import "moment/locale/pt-br"
 import Img from "gatsby-image"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 
-const PostTemplate = ({ data }) => {
+const PostTemplate = ({ data, pageContext }) => {
   const {
     title,
     date,
@@ -18,6 +18,7 @@ const PostTemplate = ({ data }) => {
     html,
     fields: { slug },
   } = data.markdownRemark
+  const { previous, next } = pageContext
   return (
     <Layout title={title} description={description}>
       <article className="single">
@@ -53,6 +54,25 @@ const PostTemplate = ({ data }) => {
             Comente este artigo no Twitter
           </OutboundLink>
         </div>
+        <footer className="navigation-links">
+          {previous && (
+            <Link
+              className="navigation-links__link navigation-links__link--previous"
+              to={previous.fields.slug}
+            >
+              ← {previous.frontmatter.title}
+            </Link>
+          )}
+
+          {next && (
+            <Link
+              className="navigation-links__link navigation-links__link--next"
+              to={next.fields.slug}
+            >
+              {next.frontmatter.title} →
+            </Link>
+          )}
+        </footer>
       </article>
     </Layout>
   )

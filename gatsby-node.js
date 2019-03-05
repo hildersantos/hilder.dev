@@ -83,8 +83,9 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
 
   // Posts creation
   posts.forEach((post, index) => {
-    const next = index === posts.length - 1 ? null : posts[index + 1].node
-    const previous = index === 0 ? null : posts[index - 1].node
+    // Confusing? That's because it's on DESC order. ;)
+    const previous = index === posts.length - 1 ? null : posts[index + 1].node
+    const next = index === 0 ? null : posts[index - 1].node
 
     createPage({
       path: post.node.fields.slug,
