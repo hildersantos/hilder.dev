@@ -1,22 +1,25 @@
 .post-listing {
-    padding-top: 1.8em;
-    &__article {
-        lost-utility: clearfix;
-        padding-bottom: 1.5em;
-        &:last-child {
-            padding-bottom: 1em;
-        }
+  padding-top: 1.8em;
+  &__article {
+    lost-utility: clearfix;
+    padding-bottom: 1.5em;
+    @include mq($from: desktop) {
+      padding-bottom: 2.2em;
     }
-    &__title {
-        font-size: 2rem;
-        margin-top: 0px;
-        margin-bottom: 0px;
+    &:last-child {
+      padding-bottom: 1em;
     }
-    &__link {
-        text-decoration: none;
-        color: $header-color;
-        &:hover {
-            text-decoration: underline;
-        }
+  }
+  &__title {
+    font-size: 2rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  &__link {
+    text-decoration: none;
+    color: $header-color;
+    &:hover {
+      text-decoration: underline;
     }
+  }
 }

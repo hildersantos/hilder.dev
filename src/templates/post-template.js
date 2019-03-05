@@ -7,7 +7,7 @@ import { DiscussionEmbed } from "disqus-react"
 import Img from "gatsby-image"
 
 const PostTemplate = ({ data }) => {
-  const { title, date, image } = data.markdownRemark.frontmatter
+  const { title, date, image, imageCaption } = data.markdownRemark.frontmatter
   const { html, id } = data.markdownRemark
   const disqusShortname = data.site.siteMetadata.disqusShortname
   const disqusConfig = {
@@ -27,6 +27,7 @@ const PostTemplate = ({ data }) => {
           {image ? (
             <figure>
               <Img fluid={image.childImageSharp.fluid} />
+              {imageCaption ? <figcaption>{imageCaption}</figcaption> : null}
             </figure>
           ) : null}
           <div
@@ -67,7 +68,17 @@ export const query = graphql`
         date
         description
         title
-        image
+        image {
+          childImageSharp {
+            resize(width: 1540, height: 1000) {
+              src
+            }
+            fluid(maxWidth: 770, maxHeight: 400, cropFocus: CENTER) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        imageCaption
       }
     }
   }
