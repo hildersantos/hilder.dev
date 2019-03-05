@@ -3,7 +3,6 @@ import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import moment from "moment"
 import "moment/locale/pt-br"
-import { DiscussionEmbed } from "disqus-react"
 import Img from "gatsby-image"
 
 const PostTemplate = ({ data }) => {
@@ -15,11 +14,6 @@ const PostTemplate = ({ data }) => {
     description,
   } = data.markdownRemark.frontmatter
   const { html, id } = data.markdownRemark
-  const disqusShortname = data.site.siteMetadata.disqusShortname
-  const disqusConfig = {
-    identifier: id,
-    title,
-  }
   return (
     <Layout title={title} description={description}>
       <article className="single">
@@ -41,9 +35,7 @@ const PostTemplate = ({ data }) => {
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </div>
-        <div className="single__comments">
-          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
-        </div>
+        <div className="single__comments" />
       </article>
     </Layout>
   )

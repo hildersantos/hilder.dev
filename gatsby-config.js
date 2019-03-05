@@ -9,7 +9,6 @@ module.exports = {
         twitter: `@hildersantos`,
       },
     },
-    disqusShortname: "hildersantos",
   },
   plugins: [
     `gatsby-plugin-catch-links`,
