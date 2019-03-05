@@ -9,7 +9,6 @@ module.exports = {
         twitter: `@hildersantos`,
       },
     },
-    disqusShortname: "hildersantos",
   },
   plugins: [
     `gatsby-plugin-catch-links`,
@@ -113,8 +112,8 @@ module.exports = {
           {
             resolve: "gatsby-remark-external-links",
             options: {
-              target: "_self",
-              rel: "nofollow",
+              target: "_blank",
+              rel: "nofollow noopener noreferrer",
             },
           },
           {

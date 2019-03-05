@@ -3,7 +3,6 @@ import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import moment from "moment"
 import "moment/locale/pt-br"
-import { DiscussionEmbed } from "disqus-react"
 import Img from "gatsby-image"
 
 const PostTemplate = ({ data }) => {
@@ -14,12 +13,10 @@ const PostTemplate = ({ data }) => {
     imageCaption,
     description,
   } = data.markdownRemark.frontmatter
-  const { html, id } = data.markdownRemark
-  const disqusShortname = data.site.siteMetadata.disqusShortname
-  const disqusConfig = {
-    identifier: id,
-    title,
-  }
+  const {
+    html,
+    fields: { slug },
+  } = data.markdownRemark
   return (
     <Layout title={title} description={description}>
       <article className="single">
@@ -42,7 +39,18 @@ const PostTemplate = ({ data }) => {
           />
         </div>
         <div className="single__comments">
-          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+          <a
+            href={`https://twitter.com/share?url=${encodeURIComponent(
+              `https://hilder.dev${slug}`
+            )}&text=${encodeURIComponent(
+              "Qual a sua opinião?"
+            )}&via=hildersantos`}
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            title="Compartilhe no Twitter"
+          >
+            Comente este artigo no Twitter
+          </a>
         </div>
       </article>
     </Layout>
