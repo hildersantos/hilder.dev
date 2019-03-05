@@ -4,9 +4,10 @@ import { graphql } from "gatsby"
 import moment from "moment"
 import "moment/locale/pt-br"
 import { DiscussionEmbed } from "disqus-react"
+import Img from "gatsby-image"
 
 const PostTemplate = ({ data }) => {
-  const { title, date } = data.markdownRemark.frontmatter
+  const { title, date, image, imageCaption } = data.markdownRemark.frontmatter
   const { html, id } = data.markdownRemark
   const disqusShortname = data.site.siteMetadata.disqusShortname
   const disqusConfig = {
@@ -22,10 +23,18 @@ const PostTemplate = ({ data }) => {
             {moment(date).format("DD [de] MMMM [de] YYYY")}
           </time>
         </header>
-        <div
-          className="single__content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+        <div className="single__content">
+          {image ? (
+            <figure>
+              <Img fluid={image.childImageSharp.fluid} />
+              {imageCaption ? <figcaption>{imageCaption}</figcaption> : null}
+            </figure>
+          ) : null}
+          <div
+            className="single__content--inner"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+        </div>
         <div className="single__comments">
           <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
         </div>
@@ -59,7 +68,17 @@ export const query = graphql`
         date
         description
         title
-        image
+        image {
+          childImageSharp {
+            resize(width: 1540, height: 1000) {
+              src
+            }
+            fluid(maxWidth: 770, maxHeight: 400, cropFocus: CENTER) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        imageCaption
       }
     }
   }

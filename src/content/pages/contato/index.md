@@ -2,7 +2,6 @@
 title: Contato
 description: Entre em contato comigo
 date: 2018-08-20T01:53:58-03:00
-image: null
 draft: false
 template: page
 ---
