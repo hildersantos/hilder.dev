@@ -10,9 +10,8 @@ O ano era 2008.
 
 Nesse período, fui chamado para palestrar em um evento que aconteceria aqui em Salvador e que era ponto de encontro de blogueiros de todo o Brasil: o **BlogCamp**. Palestrei sobre a importância de usar o WordPress mesmo quando a maioria ainda usava o Blogger, e sou extremamente grato pelas pessoas que conheci nesse evento, muitas das quais mantenho contato até hoje.
 
-<figure>
-<img src="https://i.imgur.com/DNfCjII.jpg" alt="BlogCamp Salvador"><figcaption>Pessoal do BlogCamp Salvador, em 2008. Crédito: <a href="https://www.facebook.com/photo.php?fbid=10155088005792156&set=a.10150266582152156.343921.673837155&type=3&permPage=1" title="Facebook de Eduardo Sales">Eduardo Sales</a>
-</figcaption></figure>
+<!-- prettier-ignore -->
+![Blogcamp Salvador](campus-galera.jpg (Galera que participou BlogCamp Salvador, em 2008. Crédito: Eduardo Sales))
 
 Mesmo com os bons frutos colhidos, infelizmente, nem tudo são flores. Embora as amizades tenham perdurado ao longo do tempo, vamos ser sinceros: o BlogCamp Salvador não foi exatamente um sucesso. O WordCamp (que aconteceu aqui há quase 3 anos), também não.
 
