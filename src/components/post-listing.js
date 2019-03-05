@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import moment from "moment"
+import "moment/locale/pt-br"
 
 const PostListing = ({ edges }) => {
   return (
