@@ -17,10 +17,10 @@ Atualizarei sempre esta página para responder estas perguntas - e servir como u
 
 ## Apps
 
-- **[Things 3](https://culturedcode.com/things/)**: Apesar de já ter comprado há um bom tempo, só passei a usá-lo bastante mesmo recentemente. Organizo minhas tarefas por lá e tem sido bastante efetivo!
+- **[Things 3](https://culturedcode.com/things/)**: Apesar de já ter comprado há um bom tempo, só passei a usá-lo bastante recentemente. Organizo minhas tarefas por lá e tem sido bastante efetivo!
 - **[Dash](https://kapeli.com/dash)**: O **_Dash_** é um daqueles apps que você nunca ouviu falar, mas depois que passa a usá-lo, não tem mais volta. Ele basicamente faz o download de API's para que você possa pesquisá-las localmente e de forma MUITO efetiva. Por exemplo: quer saber pra que funciona o `Code.eval_string/3` no Elixir? Simples: é só digitar `elixir:Code.eval_st` que a busca é quase instantânea. Sensacional!
-- **[Evernote](https://evernote.com)**: Outro aplicativo que considero essencial. É nele guardo todos os artigos que acho interessante e que faço meus planejamentos de estudo, viagens e etc.
-- **[Trello](https://trello.com/hildersantos/recommend)**: Uso o Trello religiosamente há uns 2 anos. Nele estão todos os meus planejamentos de projetos presentes e futuros. O Trello realmente me ajuda a organizar bem minhas tarefas de desenvolvimento.
+- **[Evernote](https://evernote.com)**: Outro aplicativo que considero essencial. É nele onde guardo todos os artigos que acho interessante e onde faço meus planejamentos de estudo, viagens e etc.
+- **[Trello](https://trello.com/hildersantos/recommend)**: Uso o Trello religiosamente há uns 2 anos para meus projetos pessoais e profissionais. Criei um fluxo de tarefas bastante efetivo pra mim, e tenho seguido ele pra todos os projetos. Em breve, devo compartilhá-lo aqui.
 
 ## Devices
 
