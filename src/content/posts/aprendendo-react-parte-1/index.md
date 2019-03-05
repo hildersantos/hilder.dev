@@ -2,7 +2,6 @@
 title: Aprendendo React - Parte 1
 description: Sobre aprender React
 date: 2018-08-30T20:45:26-03:00
-image: ""
 draft: false
 template: post
 ---

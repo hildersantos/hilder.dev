@@ -2,7 +2,6 @@
 title: Stack Pessoal
 description: Ferramentas que utilizo no meu dia a dia de desenvolvedor
 date: 2018-08-28T14:17:34-03:00
-image: null
 draft: false
 template: page
 ---

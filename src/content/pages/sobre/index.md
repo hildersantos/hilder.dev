@@ -2,7 +2,6 @@
 title: Sobre
 description: Saiba mais sobre mim, o que faço e como entrar em contato comigo
 date: 2018-08-20T00:59:38-03:00
-image: null
 draft: false
 template: page
 ---
