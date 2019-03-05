@@ -11,15 +11,28 @@
     }
   }
   &__title {
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 0.4rem;
+    color: $primary-color;
+    @include mq($from: desktop) {
+      font-size: 1.7rem;
+    }
+  }
+  &__date {
+    font-size: 0.87rem;
+  }
+  &__description {
+    line-height: 180%;
+    @include mq($from: desktop) {
+      font-size: 1.1rem;
+    }
+    p {
+      margin: 0.7rem 0;
+    }
   }
   &__link {
     text-decoration: none;
     color: $header-color;
-    &:hover {
-      text-decoration: underline;
-    }
   }
 }

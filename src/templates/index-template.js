@@ -18,8 +18,11 @@ const IndexTemplate = () => {
           edges {
             node {
               id
+              excerpt
               frontmatter {
                 title
+                description
+                date
               }
               fields {
                 slug

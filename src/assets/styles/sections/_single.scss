@@ -1,78 +1,78 @@
 .single {
-    padding-top: 1em;
-    &__title {
-        font-size: 2.5rem;
-        margin-top: 0;
-        margin-bottom: 0px;
-        @include mq($from: tablet) {
-            font-size: 4rem;
-        }
-        @include mq($from: desktop) {
-            font-size: 5rem;
-        }
+  padding-top: 1.2em;
+  &__title {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 0px;
+    @include mq($from: tablet) {
+      font-size: 4rem;
     }
-    &__content {
-        padding-top: 5px;
-        font-size: 1.1rem;
-        line-height: 180%;
-        color: #1B373F;
-        @include mq($from: tablet) {
-            font-size: 1.2rem;
-        }
-        @include mq($from: desktop) {
-            font-size: 1.33rem;
-        }
-        figure {
-            margin-top: 2em;
-            margin-bottom: 1.5em;
-            padding: 0;
-            margin-left: -20px;
-            margin-right: -20px;
-        }
-        figcaption {
-            font-size: .8em;
-            text-align: center;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-        img:not(.emoji) {
-            width: 100%;
-            min-width: 100%;
-        }
-        img.emoji {
-            height: 1.25rem;
-            margin-top: -4px;
-            vertical-align: middle;
-        }
-        hr {
-            lost-utility: clearfix;
-            display: block;
-            width: 55%;
-            margin: 2.5em auto;
-            &:after {
-                content: "§ § §";
-                display: inline-block;
-                font-style: italic;
-                position: relative;
-                top: 50%;
-                transform: translateY(-50%);
-                font-size: 1rem;
-                padding: 0 0.4em;
-                background: white;
-                letter-spacing: .2em;
-            }
-        }
+    @include mq($from: desktop) {
+      font-size: 5rem;
     }
-    &__date {
-        font-size: .8em;
-        @include mq($from: tablet) {
-            font-size: .9em;
-        }
-        @include mq($from: desktop) {
-            font-size: 1em;
-        }
+  }
+  &__content {
+    padding-top: 5px;
+    font-size: 1.1rem;
+    line-height: 180%;
+    color: #1b373f;
+    @include mq($from: tablet) {
+      font-size: 1.2rem;
     }
-    &__comments {
-        padding-top: .85em;
+    @include mq($from: desktop) {
+      font-size: 1.33rem;
     }
+    figure {
+      margin-top: 2em;
+      margin-bottom: 1.5em;
+      padding: 0;
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+    figcaption {
+      font-size: 0.8em;
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    img:not(.emoji) {
+      width: 100%;
+      min-width: 100%;
+    }
+    img.emoji {
+      height: 1.25rem;
+      margin-top: -4px;
+      vertical-align: middle;
+    }
+    hr {
+      lost-utility: clearfix;
+      display: block;
+      width: 55%;
+      margin: 2.5em auto;
+      &:after {
+        content: "§ § §";
+        display: inline-block;
+        font-style: italic;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1rem;
+        padding: 0 0.4em;
+        background: white;
+        letter-spacing: 0.2em;
+      }
+    }
+  }
+  &__date {
+    font-size: 0.8em;
+    @include mq($from: tablet) {
+      font-size: 0.9em;
+    }
+    @include mq($from: desktop) {
+      font-size: 1em;
+    }
+  }
+  &__comments {
+    padding-top: 0.85em;
+  }
 }

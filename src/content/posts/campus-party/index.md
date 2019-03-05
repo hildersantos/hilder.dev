@@ -1,5 +1,5 @@
 ---
-title: A Campus Party Salvador Precisa de Você
+title: A Campus Party Salvador precisa de você
 description: Descubra porque participar da Campus Party Salvador pode ser uma boa pedida.
 date: 2017-04-04T02:07:50-03:00
 draft: false
