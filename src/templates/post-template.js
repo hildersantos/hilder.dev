@@ -63,7 +63,6 @@ export const query = graphql`
       siteMetadata {
         title
         description
-        disqusShortname
         author {
           name
           contacts {
