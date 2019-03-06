@@ -33,17 +33,97 @@ exports[`PostTemplate renders without errors 1`] = `
             class="single__date"
             datetime="2016-09-01T00:00:00-03:00"
           >
-            01/09/2016
+            01 de Setembro de 2016
           </time>
         </header>
         <div
           class="single__content"
         >
-          <p>
-            test
-          </p>
+          <div
+            class="single__content--inner"
+          >
+            <p>
+              test
+            </p>
+          </div>
         </div>
+        <div
+          class="single__comments"
+        >
+          <a
+            href="https://twitter.com/share?url=https%3A%2F%2Fhilder.devtest&text=Qual%20a%20sua%20opini%C3%A3o%3F&via=hildersantos"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+            title="Compartilhe no Twitter"
+          >
+            Comente este artigo no Twitter
+          </a>
+        </div>
+        <footer
+          class="navigation-links"
+        >
+          <a
+            class="navigation-links__link navigation-links__link--previous"
+            href="test"
+          >
+            ← test
+          </a>
+          <a
+            class="navigation-links__link navigation-links__link--next"
+            href="test"
+          >
+            test →
+          </a>
+        </footer>
       </article>
+      <div
+        class="navigation"
+      >
+        <ul
+          class="navigation__list"
+        >
+          <li
+            class="navigation__item"
+          >
+            <a
+              class="navigation__link"
+              href="test_0"
+            >
+              Test 0
+            </a>
+          </li>
+          <li
+            class="navigation__item"
+          >
+            <a
+              class="navigation__link"
+              href="test_1"
+            >
+              Test 1
+            </a>
+          </li>
+          <li
+            class="navigation__item"
+          >
+            <a
+              class="navigation__link"
+              href="test_2"
+            >
+              Test 2
+            </a>
+          </li>
+          <li
+            class="navigation__item"
+          >
+            <a
+              class="navigation__link"
+              href="test_3"
+            >
+              Test 3
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </main>
 </DocumentFragment>

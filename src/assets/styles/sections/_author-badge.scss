@@ -1,0 +1,27 @@
+.author-badge {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 2rem 0;
+  &__avatar {
+    border-radius: 999px;
+    vertical-align: middle;
+    margin-right: 1.5rem;
+    flex-basis: 72px;
+  }
+  &__info {
+    font-size: 1.05rem;
+    line-height: 180%;
+    flex: 1;
+    p {
+      margin: 0.5rem 0;
+    }
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}

@@ -24,58 +24,102 @@ exports[`IndexTemplate renders without errors 1`] = `
         <article
           class="post-listing__article"
         >
-          <h2
-            class="post-listing__title"
+          <a
+            class="post-listing__link"
+            href="test_0"
           >
-            <a
-              class="post-listing__link"
-              href="test_0"
+            <h2
+              class="post-listing__title"
             >
               Test 0
-            </a>
-          </h2>
+            </h2>
+            <time
+              class="post-listing__date"
+              datetime="2019-03-03T23:39:13-03:00"
+            >
+              03 de Março de 2019
+            </time>
+            <div
+              class="post-listing__description"
+            >
+              <p />
+            </div>
+          </a>
         </article>
         <article
           class="post-listing__article"
         >
-          <h2
-            class="post-listing__title"
+          <a
+            class="post-listing__link"
+            href="test_1"
           >
-            <a
-              class="post-listing__link"
-              href="test_1"
+            <h2
+              class="post-listing__title"
             >
               Test 1
-            </a>
-          </h2>
+            </h2>
+            <time
+              class="post-listing__date"
+              datetime="2019-03-04T23:39:13-03:00"
+            >
+              04 de Março de 2019
+            </time>
+            <div
+              class="post-listing__description"
+            >
+              <p />
+            </div>
+          </a>
         </article>
         <article
           class="post-listing__article"
         >
-          <h2
-            class="post-listing__title"
+          <a
+            class="post-listing__link"
+            href="test_2"
           >
-            <a
-              class="post-listing__link"
-              href="test_2"
+            <h2
+              class="post-listing__title"
             >
               Test 2
-            </a>
-          </h2>
+            </h2>
+            <time
+              class="post-listing__date"
+              datetime="2019-03-05T23:39:13-03:00"
+            >
+              05 de Março de 2019
+            </time>
+            <div
+              class="post-listing__description"
+            >
+              <p />
+            </div>
+          </a>
         </article>
         <article
           class="post-listing__article"
         >
-          <h2
-            class="post-listing__title"
+          <a
+            class="post-listing__link"
+            href="test_3"
           >
-            <a
-              class="post-listing__link"
-              href="test_3"
+            <h2
+              class="post-listing__title"
             >
               Test 3
-            </a>
-          </h2>
+            </h2>
+            <time
+              class="post-listing__date"
+              datetime="2019-03-06T23:39:13-03:00"
+            >
+              06 de Março de 2019
+            </time>
+            <div
+              class="post-listing__description"
+            >
+              <p />
+            </div>
+          </a>
         </article>
       </section>
       <div

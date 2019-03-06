@@ -16,6 +16,13 @@
     font-size: 1.1rem;
     line-height: 180%;
     color: #1b373f;
+    // &::after {
+    //   content: "";
+    //   display: block;
+    //   height: 8px;
+    //   width: 8px;
+    //   background: $primary-color;
+    // }
     @include mq($from: tablet) {
       font-size: 1.2rem;
     }

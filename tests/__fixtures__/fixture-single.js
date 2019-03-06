@@ -7,5 +7,8 @@ module.exports = {
       description: "test",
       title: "test",
     },
+    fields: {
+      slug: "test",
+    },
   },
 }

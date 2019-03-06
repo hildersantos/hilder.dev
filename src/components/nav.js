@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
+import { Location } from "@reach/router"
 
 const Nav = () => {
   const {
@@ -30,6 +31,25 @@ const Nav = () => {
   return (
     <div className="navigation">
       <ul className="navigation__list">
+        <Location>
+          {({ location }) => {
+            return location.pathname !== "/" ? (
+              <li className="navigation__item">
+                <Link
+                  to="/"
+                  className="navigation__link"
+                  getProps={({ location }) =>
+                    location.pathname === "/"
+                      ? { style: { display: "none" } }
+                      : null
+                  }
+                >
+                  Home
+                </Link>
+              </li>
+            ) : null
+          }}
+        </Location>
         {edges.map(({ node }, i) => (
           <li className="navigation__item" key={i}>
             <Link to={node.fields.slug} className="navigation__link">

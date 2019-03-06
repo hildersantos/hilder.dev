@@ -1,10 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
+import AuthorBadge from "../components/author-badge"
 import { graphql, Link } from "gatsby"
 import moment from "moment"
 import "moment/locale/pt-br"
 import Img from "gatsby-image"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const PostTemplate = ({ data, pageContext }) => {
   const {
@@ -16,7 +16,7 @@ const PostTemplate = ({ data, pageContext }) => {
   } = data.markdownRemark.frontmatter
   const {
     html,
-    fields: { slug },
+    // fields: { slug },
   } = data.markdownRemark
   const { previous, next } = pageContext
   return (
@@ -40,7 +40,8 @@ const PostTemplate = ({ data, pageContext }) => {
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </div>
-        <div className="single__comments">
+        <AuthorBadge />
+        {/* <div className="single__comments">
           <OutboundLink
             href={`https://twitter.com/share?url=${encodeURIComponent(
               `https://hilder.dev${slug}`
@@ -53,7 +54,7 @@ const PostTemplate = ({ data, pageContext }) => {
           >
             Comente este artigo no Twitter
           </OutboundLink>
-        </div>
+        </div> */}
         <footer className="navigation-links">
           {previous && (
             <Link

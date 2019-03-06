@@ -26,7 +26,7 @@ const Layout = ({ children, title, description }) => (
     `}
     render={data => (
       <>
-        <SEO title={title} description={description || undefined} />
+        <SEO title={title} description={description} />
         <main className="main">
           <div className="container">
             <Header siteTitle={data.site.siteMetadata.title} />
@@ -43,6 +43,11 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
   title: PropTypes.string,
   description: PropTypes.string,
+}
+
+Layout.defaultProps = {
+  title: ``,
+  description: ``,
 }
 
 export default Layout

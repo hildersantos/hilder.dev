@@ -4,12 +4,12 @@ import { StaticQuery, useStaticQuery } from "gatsby"
 
 import Layout from "./layout"
 
+import fixtureSiteInfo from "../../tests/__fixtures__/fixture-site-info"
+import fixtureAllMarkdownRemark from "../../tests/__fixtures__/fixture-all-markdown-remark"
+
 const props = {
-  site: {
-    siteMetadata: {
-      title: `Default Title`,
-    },
-  },
+  ...fixtureSiteInfo,
+  ...fixtureAllMarkdownRemark,
 }
 beforeEach(() => {
   StaticQuery.mockImplementationOnce(({ render }) => render(props)),
