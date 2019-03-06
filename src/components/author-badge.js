@@ -22,6 +22,8 @@ const AuthorBadge = () => {
       <Img
         fixed={image.authorImage.childImageSharp.fixed}
         className="author-badge__avatar"
+        title="Hilder Santos"
+        alt="Hilder Santos"
       />
       <div className="author-badge__info">
         <p>
@@ -29,6 +31,7 @@ const AuthorBadge = () => {
             href="https://twitter.com/hildersantos"
             target="_blank"
             rel="nofollow noopener noreferrer"
+            title="Hilder Santos no Twitter"
           >
             Hilder Santos
           </OutboundLink>{" "}
