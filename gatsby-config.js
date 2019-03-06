@@ -32,8 +32,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Hilder Santos`,
-        short_name: `Hilder`,
+        name: `Hilder Santos | Desenvolvedor Full-Stack`,
+        short_name: `Hilder Santos`,
         start_url: `/`,
         background_color: `#dc136c`,
         theme_color: `#dc136c`,
