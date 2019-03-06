@@ -32,12 +32,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Hilder Santos`,
+        short_name: `Hilder`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
+        background_color: `#dc136c`,
+        theme_color: `#dc136c`,
+        display: `standalone`,
         icon: `src/assets/images/hs-icon.png`, // This path is relative to the root of the site.
       },
     },
