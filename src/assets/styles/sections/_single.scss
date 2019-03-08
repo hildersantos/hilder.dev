@@ -42,15 +42,15 @@
       padding-left: 20px;
       padding-right: 20px;
     }
-    img:not(.emoji) {
+    img:not(.emoji-icon) {
       width: 100%;
       min-width: 100%;
     }
-    img.emoji {
-      height: 1.25rem;
-      margin-top: -4px;
-      vertical-align: middle;
-    }
+    // img.emoji {
+    //   height: 1.25rem;
+    //   margin-top: -4px;
+    //   vertical-align: middle;
+    // }
     hr {
       lost-utility: clearfix;
       display: block;
