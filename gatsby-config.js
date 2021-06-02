@@ -11,6 +11,54 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 770,
+              showCaptions: true,
+            },
+          },
+          {
+            resolve: `gatsby-remark-twemoji-shortcut`,
+            options: {},
+          },
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank",
+              rel: "nofollow noopener noreferrer",
+            },
+          },
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              noInlineHighlight: true,
+            },
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Hilder Santos | Desenvolvedor Full-Stack`,
+        short_name: `Hilder Santos`,
+        start_url: `/`,
+        background_color: `#dc136c`,
+        theme_color: `#dc136c`,
+        display: `standalone`,
+        icon: `src/assets/images/hs-icon.png`, // This path is relative to the root of the site.
+      },
+    },
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
     {
@@ -25,20 +73,6 @@ module.exports = {
       options: {
         name: `pages`,
         path: `${__dirname}/src/content`,
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Hilder Santos | Desenvolvedor Full-Stack`,
-        short_name: `Hilder Santos`,
-        start_url: `/`,
-        background_color: `#dc136c`,
-        theme_color: `#dc136c`,
-        display: `standalone`,
-        icon: `src/assets/images/hs-icon.png`, // This path is relative to the root of the site.
       },
     },
     {
@@ -104,40 +138,6 @@ module.exports = {
             `,
             output: "/rss.xml",
             title: "Hilder Santos - Feed RSS",
-          },
-        ],
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
-              maxWidth: 770,
-              showCaptions: true,
-            },
-          },
-          {
-            resolve: `gatsby-remark-twemoji-shortcut`,
-            options: {},
-          },
-          {
-            resolve: "gatsby-remark-external-links",
-            options: {
-              target: "_blank",
-              rel: "nofollow noopener noreferrer",
-            },
-          },
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {
-              noInlineHighlight: true,
-            },
           },
         ],
       },
