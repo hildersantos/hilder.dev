@@ -4,7 +4,7 @@ import AuthorBadge from "../components/author-badge"
 import { graphql, Link } from "gatsby"
 import moment from "moment"
 import "moment/locale/pt-br"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const PostTemplate = ({ data, pageContext }) => {
   const {
@@ -31,7 +31,7 @@ const PostTemplate = ({ data, pageContext }) => {
         <div className="single__content">
           {image ? (
             <figure>
-              <Img fluid={image.childImageSharp.fluid} />
+              <GatsbyImage image={image.childImageSharp.gatsbyImageData} />
               {imageCaption ? <figcaption>{imageCaption}</figcaption> : null}
             </figure>
           ) : null}
@@ -108,9 +108,13 @@ export const query = graphql`
             resize(width: 1540, height: 1000) {
               src
             }
-            fluid(maxWidth: 770, maxHeight: 400, cropFocus: CENTER) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(
+              width: 1540,
+              height: 800,
+              transformOptions: {
+                cropFocus: CENTER
+              }
+            )
           }
         }
         imageCaption

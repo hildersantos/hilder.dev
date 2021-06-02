@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const AuthorBadge = () => {
@@ -9,9 +9,7 @@ const AuthorBadge = () => {
       query {
         authorImage: file(relativePath: { eq: "hilder-santos.jpg" }) {
           childImageSharp {
-            fixed(width: 72) {
-              ...GatsbyImageSharpFixed
-            }
+            gatsbyImageData(layout: FIXED, width: 72)
           }
         }
       }
@@ -19,8 +17,9 @@ const AuthorBadge = () => {
   )
   return (
     <div className="author-badge">
-      <Img
-        fixed={image.authorImage.childImageSharp.fixed}
+      <GatsbyImage
+        image={image.authorImage.childImageSharp.gatsbyImageData}
+        imgClassName="author-badge__avatar"
         className="author-badge__avatar"
         title="Hilder Santos"
         alt="Hilder Santos"
@@ -37,7 +36,7 @@ const AuthorBadge = () => {
           </OutboundLink>{" "}
           é desenvolvedor full-stack.
         </p>
-        <p>Gosta de trabalhar com Elixir, React e café.</p>
+        <p>Gosta de trabalhar com Elixir e café.</p>
       </div>
     </div>
   )

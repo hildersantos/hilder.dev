@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import SEO from "./seo"
+import Seo from "./seo"
 import Nav from "./nav"
 
 const Layout = ({ children, title, description }) => (
@@ -26,7 +26,7 @@ const Layout = ({ children, title, description }) => (
     `}
     render={data => (
       <>
-        <SEO title={title} description={description} />
+        <Seo title={title} description={description} />
         <main className="main">
           <div className="container">
             <Header siteTitle={data.site.siteMetadata.title} />
