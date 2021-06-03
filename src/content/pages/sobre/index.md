@@ -6,14 +6,16 @@ draft: false
 template: page
 ---
 
-Natural de Salvador-BA, meu desejo de se tornar Desenvolvedor começou em 2006, quando comecei a criar meus próprios temas em WordPress para os blogs que mantinha.
+Olá! Bem vindo ao meu pequeno espaço na web.
 
-Em 2008, tive meu primeiro emprego numa Agência Digital e de lá pra cá, não parei mais de desenvolver e otimizar os meus blogs. Sou louco em desenvolver novas ideias e em oferecer uma excelente experiência de usuário no geral. Gosto de me comunicar bem, seja pela escrita ou pelos meus projetos.
+Eu sou natural de Salvador-BA, mas moro em São Paulo-SP desde 2018. Vim pra cá a convite da **Plataformatec**, uma empresa de consultoria em tecnologia que foi adquirida pelo **Nubank** em 2020.
 
-Já participei de vários projetos interessantes (como freelancer ou trabalhando em agência), como a primeira versão em WordPress do site da cantora Ivete Sangalo (foi um desafio tremendo na época), o antigo blog _Visionando_, da AXE, e o site da Secretaria da Cultura da Bahia.
+Atualmente, trabalho na **[Tiltify](https://tiltify.com)** como Desenvolvedor Elixir.
 
-Em 2014, participei da campanha que elegeu o senador Otto Alencar (na Bahia), trabalhando na parte de desenvolvimento do site e desenvolvimento de aplicativos web/mobile. Após a campanha, mais precisamente em Outubro daquele mesmo ano, abri minha própria empresa de desenvolvimento: a **Falkor**. Ela nasceu do desejo de gerar projetos que façam a diferença de verdade, de abraçar desafios e de aprender coisas novas, que possam tornar o mundo um lugar mais legal para viver.
+Embora atualmente meu foco seja no backend, comecei (como muitos) no frontend. Na minha transição de carreira, passei por linguagens como PHP e JavaScript, mas acabei me apaixonando mesmo foi pelo Elixir.
 
-Minha especialização, além de WordPress, é produção front-end. Me considero um desenvolvedor Full Stack, e atualmente tenho estudado Elixir, Vue.js e desenvolvimento mobile. Tenho meus próprios servidores na [Digital Ocean](https://m.do.co/c/b48bafc27e54), onde eu mesmo presto manutenção - por sinal, este blog está hospedado lá.
+Nas minhas horas de lazer, costumo jogar um pouco, ler algum livro interessante ou me reunir com amigos (UPDATE: não por enquanto, por conta da pandemia).
 
-Se quiser saber um pouco mais sobre o meu trabalho ou me contratar para algum projeto interessante, fique à vontade para [entrar em contato](/contato) comigo. Obrigado por ter lido até aqui!
+Se quiser saber um pouco mais sobre minhas opiniões, você pode acessar o meu perfil no [Twitter](https://twitter.com/hildersantos). Também estou no [LinkedIn](https://linkedin.com/in/hildersantos) e [GitHub](https://github.com/hildersantos).
+
+Obrigado por ter lido até aqui!
